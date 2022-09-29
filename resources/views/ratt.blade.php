@@ -4,20 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Donkey</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rattstyle.css">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
    <body>
     <div class="hero-image">
       <div class="wrapper">
       <nav class="nav">
-          <img src="/images/Logo.svg">
-        <ul>
+          <img class="logo" src="/images/Logo.svg">
+        <ul class="start-meny">
           <li>Våra kläder</li>
           <li>Outlet</li>
           <li>Butiker</li>
@@ -25,6 +26,7 @@
           <li>Om oss</li>
         </ul>
         <button class="nav-button">Get in touch</button>
+        <div class="hamburger-meny"><i class="fa fa-bars"></i></div>   
       </nav>
       <header class="main-head">
         <h1>Så kliv in i Donkeys magiska värld - där barn alltid är barn.</h1>
@@ -34,6 +36,8 @@
     </header>
       </div>
     </div>
+
+    <!-- arbeta nedom detta -->
 
     <div class="wrapper"> 
         <div class="news">
@@ -61,7 +65,9 @@
 
           <form class="form">
             <p class="small-title-form">Namn <input class="user-info" name="namn" value="Skriv ditt namn"></p>
+            <hr class="form-hr">
             <p class="small-title-form">Email <input class="user-info" type="email" name="email" value="Fyll i din mailadress"></p>
+            <hr class="form-hr">
               <div class="category-block">
               <div class="title">
               <p class="small-title-form">Välj underkategori</p>
@@ -85,6 +91,7 @@
                 </label>
             </div>
               </div>
+              <hr class="form-hr">
             <div class="form-buttons">
               <button class="clear-button" type="submit">Rensa alternativ</button>
               <button class="send-button" type="submit">Skicka</button>
@@ -102,28 +109,27 @@
      
     <div class="background-footer">
           <div class="footer-text">
-            <img src="/images/Logo (1).svg">
+            <img class="last-logo" src="/images/Logo (1).svg">
             <div class="text-container">
             <h2 class="footer-title">Donkey Clothing</h2>
             <p>Donkey har kläder till barn, från nyfödd och baby, till barn i förskole- och skolåldern. Barnkläder och bebiskläder som underlättar vardagen och som fungerar lika bra för fartfyllda utomhusaktiviteter som till fest. Med 100 % hållbarhetsmärkt bomull i hela vår kollektion gör vi kläder till baby och barn, men också kläder till den nyfödda familjemedlemmen. Helt enkelt kläder som låter barn vara barn.</p>
           </div>
             <div class="contact-info">
               <p>Donkey Clothing <br>194 61 Stockholm <br>Sweden</p>
-              <hr>
+              <hr class="contact-hr">
               <p>+46 0 000 000 00</p>
-              <hr>
+              <hr class="contact-hr">
               <p>info@donkey.com</p>
           </div>
         </div>  
           <footer> 
             <hr class="footer-hr">
           <ul class="footer-meny">
-            <li>Om Donkey</li>
-            <li>Hitta våra butiker</li>
-            <li>Jobba hos oss</li>
-            <li>Press</li>
-            <li>Privacy Policy</li>
-            <li>Cookie Policy</li>
+            <li><a href="Om Donkey">Om Donkey</a></li>
+            <li><a href="Jobba hos oss">Jobba hos oss</a></li>
+            <li><a href="Press">Press</a></li>
+            <li><a href="Privacy Policy">Privacy Policy</a></li>
+            <li><a href="Cookie Policy">Cookie Policy</a></li>
           </ul>
         </footer>
       </div>

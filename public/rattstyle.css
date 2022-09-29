@@ -64,17 +64,16 @@ body{
     width: 1440px;
     margin: 0 auto;
     padding: 0 64px;
-    
 }
+
+/* startmenyn nedan */
 
 .nav{
     width: 100%;
     height: 130px;
     display: flex;
     align-items: center;
-    position: relative;
-
-        
+    position: relative;      
 }
 
 button{
@@ -95,8 +94,7 @@ button{
     font-size: 14px;
 }
 
-ul li {
-
+.start-meny li {
     list-style: none;
     display: inline-block;
     font-size: 14px;
@@ -104,9 +102,22 @@ ul li {
     line-height:24px;
     font-weight: 600;
     gap: 32px;
-    margin-left: 40px;
+    margin-left: 32px;
     
 }
+
+.hamburger-meny{
+    margin-right: 15px;
+    color:#202E55;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #ECD400;
+    border: #202E55;
+    border-radius: 1000px;
+    display: none;
+}
+
+/*bakgrundsbild och övrig info på första sidan nedan */
 
 .hero-image {
     background-image: url("/images/Hero.png");
@@ -126,7 +137,6 @@ ul li {
     font-weight: 600;
     color: #202E55;
     width: 500px;
-   
   }
 
   p{
@@ -134,13 +144,12 @@ ul li {
     line-height: 26px;
     font-weight: 400;
     color: #202E55;
-    
   }
+
   .header-text{
     margin-top: 54px;
     margin-bottom: 32px;
     width: 461px; 
-
   }
 
 .header-button{
@@ -149,20 +158,21 @@ ul li {
     margin-left: auto;
     line-height: 22px;
     font-size: 16px;
-}
+  }
   header{
     margin-left: 80px;
     margin-top: 61px;
 
   }
 
-/*sida nr 2 nedan*/
+  /*sida nr 2 nedan*/
 .news{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     
-}
+  }
+
   .small-title
   {
     font-size: 14px;
@@ -178,7 +188,6 @@ ul li {
     font-weight: 600;
     color: #202E55;
     margin-top: 16px;
-   
   }
 
   .shop-button
@@ -195,9 +204,7 @@ ul li {
   .left-column{
     width: 480px;
     margin-left: 80px;
-
-
-}
+  }
   .news-image{
     width: 656px;
     height: 520px;
@@ -207,7 +214,6 @@ ul li {
     margin-top: 24px;
   }
 
-
   .readmore-button
   {
     width: 128px;
@@ -216,7 +222,6 @@ ul li {
     line-height: 22px;
     font-size: 16px;
     margin-top: 24px;
-
   }
 
   .right-column{
@@ -257,10 +262,9 @@ ul li {
   }
 
   .form-textbox{
-    width: 480px;
+    max-width: 480px;
     height: 78px;
     margin-top: 24px;
-
   }
 
   .user-info{
@@ -273,6 +277,7 @@ ul li {
     font-weight: 600;
     margin-top: 8px;
     color: #202E55;
+    display: block;
   }
 
   .small-title-form{
@@ -282,6 +287,13 @@ ul li {
     font-weight: 600;
   }
 
+  .form-hr{
+    width: 1088px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: #464749;
+    margin-top: 22px;
+  }
 
   .radio{
     display: flex;
@@ -302,7 +314,6 @@ ul li {
     border-style: solid;
     border-width: 1px;
     margin: 0px;
-    
   }
 
   .radio label{
@@ -311,7 +322,6 @@ ul li {
     height: 50px;
     margin-top: 24px;
     cursor: pointer;
-
   }
 
   .radio input:checked~div{
@@ -336,18 +346,17 @@ ul li {
   .form-buttons{
     display: flex;
     justify-content: space-between;
-
   }
+
   .clear-button{
     width: 536px;
     height: 56px;
     font-size: 16px;
     line-height: 22px;
-    margin-top: 48px;
+    margin-top: 24px;
     background-color: #F5F5F5;
     border:solid #202E55;
     border-width: 1px;
-
   }
 
   .send-button{
@@ -355,16 +364,15 @@ ul li {
     height: 56px;
     font-size: 16px;
     line-height: 22px;
-    margin-top: 48px;
-
+    margin-top: 24px;
   }
 
     /*sida nr 4 (sista sidan) nedan*/
 
   .last-page{
     display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .img-footer{
@@ -379,7 +387,6 @@ ul li {
     align-items: center;
     flex-direction: column;
     margin-top: 104px;
-
   }
 
   .final-title{
@@ -397,8 +404,7 @@ ul li {
       text-align: center;
       color: white;
       margin-top: 24px;
-      width: 465px;
-
+      max-width: 465px;
   }
 
   .last-button{
@@ -408,33 +414,29 @@ ul li {
     line-height: 22px;
     background-color: white;
     margin-top: 24px;
-
   }
   
   .background-footer {
     background-color: #ECD400;
     width: 1440px;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 120px;
-  
   }
 
   .footer-text{
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
-
   }
 
   .text-container{
-    width: 560px;
+    max-width: 560px;
     height: 210px;
     margin-left: 34px;
     margin-top: 11px;
-    
   }
 
   footer{
@@ -442,18 +444,19 @@ ul li {
     flex-direction: column;
     align-items:center;
     margin-top: 0px;
-  
-  }
-
-  hr{
-    border-color:#202E55;
-    margin-top: 16px;
-    margin-bottom: 16px;
   }
 
   .footer-hr{
     width: 1312px;
-    
+    border-width:0;
+    height: 1px;
+    background-color:#202E55;
+  }
+
+  .contact-hr{
+    border-width:0;
+    height: 1px;
+    background-color:#202E55;
   }
 
   .contact-info{
@@ -474,19 +477,243 @@ ul li {
     margin-bottom: 24px;
   }
 
-
   .footer-meny li{
-    font-family: 'PP Neue Machina';
-    text-decoration: underline;
+    list-style: none;
+    display: inline-block;
+    font-family: 'PP Neue Machina', monospace;
     font-size: 14px;
     line-height: 24px;
     font-weight: 800px;
     margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: 32px;
   }
 
-  
+  .footer-meny li a{
+    color:#202E55;
+  }
 
+  /* mobilanpassad version nedan */
+
+  @media screen and (max-width: 600px) {
+
+    .wrapper{
+      width: 100%;
+      padding: 0 24px;
+    }
+
+    .hero-image{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;  
+    }
+
+    .nav{
+        height: 80px;
+    }
+    
+    .logo{
+        width: 50px;
+        height: 60px;
+    }
+
+    .hamburger-meny{
+      display: block;
+    }
+
+    h1{
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 15px;
+        max-width: 250px;
+
+      }
+
+      .start-meny{
+        display: none;
+      }
+
+      .nav-button{
+        width: 110px;
+        height: 40px;
+        line-height: 22px;
+        font-size: 12px;
+    }
+
+
+      .header-text{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        max-width: 250px; 
+    
+      }
+
+      header{
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+
+      p{
+        font-size: 12px;
+        line-height: 22px;
+      }
+
+      .header-button{
+        width: 110px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .left-column{
+      width: 300px;
+      margin-left:0px;
+    }
+
+    .right-column{
+      max-width: 300px;
+      margin-top: 0px;
+    }
+
+    .news-image{
+      width: 100%;
+      height: auto;
+    }
+
+    .img1{
+      order: -1;
+    }
+
+    .img2{
+      margin-top: 50px;
+    }
+
+    .news{
+      flex-wrap: nowrap;
+      flex-direction: column;  
+  }
+
+  .small-title
+  {
+    margin-top: 20px;
+  }
+
+  h2{
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .background-form{
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .form-hr{
+    width: 280px;
+  }
+
+  .user-info{
+    width: 280px;
+  }
+
+  .contact{
+    margin: 50px 20px;
+  }
+
+  .form-buttons{
+    flex-wrap: wrap;
+  }
+
+  .last-page{
+  display:unset;
+  flex-direction: unset;
+  align-items: unset;
+  }
+
+  .img-footer{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+  }
+
+  .final-title{
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 50px;
+  }
+
+  .white-text{
+    width: 320px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .last-button{
+    width: 130px;
+    height: 50px;
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 50px;
+  }
+  
+  .background-footer {
+    max-width: 100%;
+    padding-top: 15px;
+    height: auto;
+    align-items: unset;
+  }
+
+  .text-container{
+    display: none;
+  }
+
+  .contact-info{
+    height: auto;
+    margin-left: 0px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .contact-hr{
+    width: 100px;
+  }
+
+ .last-logo{
+    width: 80px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 20px;
+ }
+
+  .footer-text{
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+  }
+
+  .footer-hr{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-meny{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-meny li{
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  }
 
  
-  
 
